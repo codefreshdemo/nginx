@@ -1,3 +1,11 @@
+* Build image
+
 ```
-docker run --name nginx_cont_1 -p 80:80 nginx
+docker build -t nginx_image -f Dockerfile.openresty .
+```
+
+* Run composition
+
+```
+docker-compose -f docker-compose.yml up
 ```
